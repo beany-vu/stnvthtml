@@ -1,0 +1,170 @@
+header .header-top {
+    position: relative;
+    background: #2c9395;
+}
+header .header-top:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: url('../img/header/header-top-shadow.png') no-repeat;
+    background-size: 100% 100%;
+}
+header .header-top:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+header .header-top .inner-wrapper {
+    display: block;
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 15px;
+    margin: auto;
+}
+header .header-top .left-header-top {
+    padding-left: 150px;
+    overflow: hidden;
+    float: left;
+}
+header .header-top .left-header-top li{
+    display: block;
+    float: left;
+}
+header .header-top .left-header-top li a {
+    display: block;
+    padding: 15px 40px;
+    font-family: 'Segoe UI';
+    font-style: italic;
+    font-size: 13px;
+    color: #ffffff;
+}
+header .header-top .left-header-top li {
+    position: relative;
+}
+header .header-top .left-header-top li.current{
+    z-index: 10;
+}
+header .header-top .left-header-top li.current a {
+    font-weight: 600;
+}
+header .header-top .left-header-top li:not(.current):after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 19px;
+    background: url('../img/header/li-item-shadow.png') no-repeat;
+    background-size: 100% 100%;
+}
+header .header-top .left-header-top li:not(.current) a:before {
+    content: "";
+    display: block;
+    float: left;
+    margin: 5px 8px 0 0;
+    background: url(../img/header/white-rectangle.png) no-repeat;
+    width: 8px;
+    height: 7px;
+}
+header .header-top .left-header-top li.current a {
+    color: #bb7631;
+    background: #f0f0f0;
+}
+header .header-top .left-header-top li a,
+header .header-top .left-header-top li a:hover {
+    text-decoration: none;
+}
+header .header-top .left-header-top li.last a{
+    background: #0a686a;
+}
+header .header-top .right-header-top {
+    float: right;
+}
+header .header-top .right-header-top li {
+    display: block;
+    float: left;
+}
+header .header-top .right-header-top li a {
+    display: block;
+    padding: 15px 40px;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    font-size: 13px;
+    color: #ffffff;
+}
+header .header-top .right-header-top li {
+    border-left: 1px solid rgba(0,0,0,.2);
+}
+header .header-top .right-header-top li:last-of-type {
+    border-right: 1px solid rgba(0,0,0,.2);
+}
+header .header-top .right-header-top .store-locator:before {
+    content: "";
+    display: block;
+    float: left;
+    background: url('../img/header/ico-store-locator.png') no-repeat;
+    width: 22px;
+    height: 18px;
+    margin: 11px 0 0 10px;
+}
+header .header-top .right-header-top .sign-up:before {
+    content: "";
+    display: block;
+    float: left;
+    background: url('../img/header/ico-sign-up.png') no-repeat;
+    width: 14px;
+    height: 14px;
+    margin: 15px 0 0 10px;
+}
+
+header .header-bottom {
+    background: #f5f5f5;
+}
+header .header-bottom:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+header .header-bottom .inner-wrapper {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+}
+header .header-bottom .inner-wrapper .logo {
+    margin: 15px 30px 15px 10px;
+    display: block;
+    float: left;
+}
+header .header-bottom .inner-wrapper nav .lv-0 {
+    float: left;
+    position: relative;
+    width: calc(100% - 180px);
+}
+header .header-bottom .inner-wrapper nav .lv-0>li>a {
+    font-family: 'Segoe UI Semibold';
+    font-size: 23px;
+    color: #176566;
+    display: block;
+    margin: 8px 0;
+}
+header .header-bottom .inner-wrapper nav .lv-0>li>a:after {
+    content: "";
+    display: inline-block;
+    margin: 0 8px;
+    width: 12px;
+    height: 7px;
+    background: url('../img/header/green-arrow.png') no-repeat;
+    background-size: 100% 100%;
+}
+header .header-bottom .inner-wrapper nav .lv-0>li {
+    max-width: 200px;
+    width: 100%;
+    float: left;
+    padding: 0 5px;
+}
+.lv-1 {
+    display: none;
+}
